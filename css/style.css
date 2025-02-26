@@ -1191,35 +1191,104 @@
     }
   }
   
-  /* Mobile Sticky Menu */
+  /* Mobile Menu Base Styles (Hidden by default) */
   .mobile-menu-toggle {
-    display: none; /* Hide by default */
+    display: none;
   }
   
   .mobile-menu {
-    display: none; /* Hide by default */
+    display: none;
   }
   
-  /* Only show on mobile screens */
+  /* Mobile Styles (screens <= 768px) */
   @media (max-width: 768px) {
+    /* Hide desktop navigation */
     .navbar .nav-links,
     .navbar .nav-toggle {
-      display: none;
+        display: none;
     }
     
+    /* Show and style mobile toggle button */
     .mobile-menu-toggle {
-      display: flex; /* Show on mobile */
+        display: flex;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 60px;
+        height: 60px;
+        background: var(--primary);
+        border-radius: 50%;
+        box-shadow: var(--shadow-lg);
+        z-index: 1002;
+        border: none;
+        cursor: pointer;
+        transition: var(--transition);
+        align-items: center;
+        justify-content: center;
     }
-    
+
+    .mobile-menu-toggle span {
+        color: white;
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-menu-toggle:hover {
+        transform: translateY(-3px);
+        background: var(--primary-dark);
+    }
+
+    /* Style mobile menu */
     .mobile-menu {
-      display: block; /* Show on mobile */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--dark);
+        padding: 2rem;
+        transition: var(--transition);
+        z-index: 1001;
+        box-shadow: var(--shadow-lg);
+    }
+
+    .mobile-menu.active {
+        right: 0;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 2rem 0;
+    }
+
+    .mobile-menu ul li {
+        margin: 1rem 0;
+    }
+
+    .mobile-menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: block;
+        padding: 0.75rem 1rem;
+        border-radius: var(--border-radius);
+        transition: var(--transition);
+    }
+
+    .mobile-menu ul li a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--primary);
     }
   }
   
-  /* Explicitly hide on larger screens */
+  /* Desktop Styles (screens > 768px) */
   @media (min-width: 769px) {
     .mobile-menu-toggle,
     .mobile-menu {
-      display: none !important; /* Force hide on larger screens */
+        display: none !important;
     }
   }
