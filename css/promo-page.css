@@ -1,0 +1,637 @@
+/*
+ * Estilos para página promocional - Kit Distribución + Bomba de Agua
+ * Optimizado para conversión y responsive design
+ */
+
+/* ============================================
+   ESTILOS BASE DE LA PROMOCIÓN
+   ============================================ */
+
+.promo-highlight {
+    background: linear-gradient(135deg, #FECE1A 0%, #f5b800 100%);
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.promo-price {
+    font-size: 72px;
+    font-weight: bold;
+    color: #181A1C;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.3);
+    line-height: 1.2;
+}
+
+.promo-details {
+    font-size: 24px;
+    color: #181A1C;
+    margin-top: 10px;
+}
+
+/* ============================================
+   CALL TO ACTION BUTTONS
+   ============================================ */
+
+.urgent-cta {
+    background: #d32f2f;
+    color: white !important;
+    padding: 20px 40px;
+    font-size: 28px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(211,47,47,0.4);
+    transition: all 0.3s ease;
+    margin: 20px auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+    word-wrap: break-word;
+    animation: pulse 2s infinite;
+}
+
+.urgent-cta:hover {
+    background: #b71c1c;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(211,47,47,0.6);
+    color: white !important;
+    text-decoration: none;
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 5px 15px rgba(211,47,47,0.4);
+    }
+    50% {
+        box-shadow: 0 5px 25px rgba(211,47,47,0.7);
+    }
+    100% {
+        box-shadow: 0 5px 15px rgba(211,47,47,0.4);
+    }
+}
+
+/* ============================================
+   NÚMEROS DE TELÉFONO
+   ============================================ */
+
+.phone-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FECE1A;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    word-break: break-word;
+}
+
+.secondary-phone {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* ============================================
+   CAJAS DE BENEFICIOS
+   ============================================ */
+
+.benefit-box {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 5px solid #FECE1A;
+    transition: all 0.3s ease;
+}
+
+.benefit-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .benefit-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+}
+
+/* ============================================
+   COUNTDOWN TIMER
+   ============================================ */
+
+.countdown-timer {
+    background: #d32f2f;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    animation: pulse 3s infinite;
+}
+
+/* ============================================
+   TÍTULOS Y TEXTOS
+   ============================================ */
+
+.hero-title {
+    font-size: 56px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 42px;
+    color: #FECE1A;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.title h1 {
+    font-size: 36px;
+    line-height: 1.3;
+    padding: 0 15px;
+}
+
+.title p {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px 15px;
+}
+
+/* ============================================
+   RESPONSIVE - TABLETS (max-width: 979px)
+   ============================================ */
+
+@media (max-width: 979px) {
+    .promo-price {
+        font-size: 56px;
+    }
+    
+    .hero-title {
+        font-size: 42px;
+    }
+    
+    .hero-subtitle {
+        font-size: 32px;
+    }
+    
+    .urgent-cta {
+        font-size: 24px;
+        padding: 18px 30px;
+    }
+    
+    .phone-number {
+        font-size: 40px;
+    }
+    
+    .countdown-timer {
+        font-size: 18px;
+        padding: 12px 8px;
+    }
+    
+    .promo-details {
+        font-size: 20px;
+    }
+    
+    .secondary-phone {
+        font-size: 20px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MÓVILES (max-width: 767px)
+   ============================================ */
+
+@media (max-width: 767px) {
+    .promo-highlight {
+        padding: 25px 15px;
+        margin: 20px 10px;
+    }
+    
+    .promo-price {
+        font-size: 48px;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+        padding: 0 15px;
+    }
+    
+    .hero-subtitle {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+    
+    .urgent-cta {
+        font-size: 18px;
+        padding: 15px 25px;
+        margin: 15px 10px;
+        white-space: normal;
+        line-height: 1.3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .urgent-cta:hover {
+        transform: none;
+    }
+    
+    .phone-number {
+        font-size: 32px;
+        padding: 0 15px;
+    }
+    
+    .countdown-timer {
+        font-size: 16px;
+        padding: 12px 10px;
+        line-height: 1.4;
+    }
+    
+    .promo-details {
+        font-size: 18px;
+    }
+    
+    .secondary-phone {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    
+    .benefit-box {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    .benefit-box h3 {
+        font-size: 18px;
+    }
+    
+    .section {
+        padding: 40px 0 !important;
+    }
+    
+    .large-text {
+        font-size: 20px !important;
+        padding: 0 15px;
+        line-height: 1.5;
+    }
+    
+    .price-column {
+        margin-bottom: 30px;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .title h1 {
+        font-size: 28px;
+    }
+    
+    .title p {
+        font-size: 16px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MÓVILES PEQUEÑOS (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+    .promo-price {
+        font-size: 42px;
+    }
+    
+    .hero-title {
+        font-size: 26px;
+    }
+    
+    .hero-subtitle {
+        font-size: 20px;
+    }
+    
+    .urgent-cta {
+        font-size: 16px;
+        padding: 12px 20px;
+        width: 90%;
+        max-width: 320px;
+    }
+    
+    .phone-number {
+        font-size: 28px;
+    }
+    
+    .countdown-timer {
+        font-size: 14px;
+        padding: 10px 8px;
+    }
+    
+    .secondary-phone {
+        font-size: 16px;
+    }
+}
+
+/* ============================================
+   MEJORAS GENERALES
+   ============================================ */
+
+.section.primary-section,
+.section.secondary-section {
+    overflow-x: hidden;
+}
+
+.centered {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.service h3,
+.testimonial strong {
+    word-wrap: break-word;
+}
+
+.button-ps {
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 12px 20px;
+}
+
+.promo-highlight,
+.benefit-box,
+.highlighted-box {
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .highlighted-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+/* ============================================
+   ANIMACIONES ADICIONALES
+   ============================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service,
+.testimonial {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ============================================
+   ACCESIBILIDAD Y MEJORAS UX
+   ============================================ */
+
+.urgent-cta:focus,
+.button:focus {
+    outline: 3px solid #FECE1A;
+    outline-offset: 2px;
+}
+
+a[href^="tel:"] {
+    text-decoration: none;
+}
+
+/* Mejor contraste para lectura */
+.benefit-box,
+.highlighted-box {
+    backdrop-filter: blur(10px);
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ============================================
+   BOTÓN DE WHATSAPP
+   ============================================ */
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #25D366;
+    color: white !important;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-button:hover {
+    background: #20BA5A;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    color: white !important;
+    text-decoration: none;
+}
+
+.whatsapp-button svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    .whatsapp-button {
+        font-size: 16px;
+        padding: 14px 25px;
+        gap: 10px;
+        width: 90%;
+        max-width: 320px;
+    }
+    
+    .whatsapp-button svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-button {
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+}
+
+/* ============================================
+   HIGHLIGHTED BOXES - MEJORAS
+   ============================================ */
+
+.highlighted-box {
+    padding: 25px 20px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlighted-box h1,
+.highlighted-box h2,
+.highlighted-box h3 {
+    margin-bottom: 15px;
+}
+
+.highlighted-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+    .highlighted-box {
+        padding: 20px 15px;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .highlighted-box p {
+        font-size: 15px;
+    }
+}
+
+/* ============================================
+   PRICE TABLE - MEJORAS RESPONSIVE
+   ============================================ */
+
+.price-table .price-column {
+    padding: 0 10px;
+}
+
+@media (max-width: 767px) {
+    .price-table .price-column {
+        width: 100%;
+        float: none;
+        margin-bottom: 25px;
+    }
+    
+    .price-table .span4 {
+        width: 100%;
+    }
+}
+
+/* ============================================
+   TESTIMONIALS - MEJORAS
+   ============================================ */
+
+.testimonial {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .testimonial {
+        min-height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+/* ============================================
+   BETTER SPACING
+   ============================================ */
+
+.row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+}
+
+@media (max-width: 767px) {
+    .row-fluid [class*="span"] {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+    }
+}
+
+/* ============================================
+   NAVBAR FIXES PARA DROPDOWN
+   ============================================ */
+
+@media (max-width: 979px) {
+    .navbar .nav .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: #181A1C;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .navbar .nav .dropdown-menu li a {
+        color: #fff;
+        padding: 10px 20px;
+    }
+}
+
+/* ============================================
+   MEJORAS ADICIONALES DE ESPACIADO
+   ============================================ */
+
+.section {
+    position: relative;
+}
+
+.service,
+.testimonial,
+.price-column {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .span4 {
+        width: 48%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/* ============================================
+   PERFORMANCE
+   ============================================ */
+
+/* Transiciones suaves para todos los elementos interactivos */
+a, button, .button, .urgent-cta {
+    transition: all 0.3s ease;
+}
+
